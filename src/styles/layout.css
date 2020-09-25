@@ -1,0 +1,307 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background: #f4f4f9;
+  color: #193132;
+}
+
+.body-locked {
+  position: fixed;
+}
+
+/* Generic Tag Styles  */
+
+
+
+li {
+  list-style-type: none;
+}
+
+li:before {
+  content: "-";
+}
+
+p,
+a,
+ul,
+li,
+button,
+select,
+option {
+  font-family: "Open Sans";
+  font-weight: '300';
+}
+
+select,
+select:focus {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: #193132;
+}
+
+button {
+  font-family: 'Montserrat';
+  border-radius: 3px;
+  border: solid 2px #19313262;
+  background: transparent;
+  font-size: 16px;
+  padding: 5px 10px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 185px;
+}
+
+.button-icon {
+  font-size: 16px;
+}
+
+.call-us-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon {
+  color: #ce2026;
+  font-size: 25px;
+}
+
+button:active{
+  outline: 0;
+  border: solid 2px #ce2026;
+}
+
+button:active {
+  border: solid 2px #ce2026;
+}
+
+/* Generic Classes -- App Wide */
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.col-3 {
+  width: 33%;
+}
+
+.col-4 {
+  width: 40%;
+}
+
+.col-5 {
+  width: 45%;
+}
+
+
+
+.title-content {
+  font-size: 20px;
+  text-align: center;
+}
+
+.body-content {
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  order: 3;
+  font-weight: 300;
+}
+
+.content-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  margin: 20px 0;
+}
+
+
+.content-block i {
+  font-size: 30px;
+}
+
+.content-block h4 {
+  font-size: 16px;
+}
+
+
+.subtitle {
+  width: 300px;
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+  z-index: 2;
+}
+
+.clip-path-bottom {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 50% 100%, 0% 95%);
+}
+
+.clip-bottom-fill {
+  position: relative;
+  width: 100vw;
+  height: 75px;
+  clip-path: polygon(0% 0%, 50% 75%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.line-break-full {
+  width: 100%;
+  margin: 0;
+  height: 1px;
+  background: transparent;
+}
+
+.line-break-horizontal {
+  width: 50px;
+  margin-top: 10px;
+  height: 1px;
+  background: lightgrey;
+}
+
+.line-break-vertical {
+  width: 1px;
+  height: 10px;
+  background: grey;
+  margin: 0 auto;
+}
+
+.section-wrapper {
+  padding: 25px;
+  padding-bottom: 50px;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.424);
+}
+
+
+@media only screen and (min-width: 768px) {
+  .section-wrapper {
+    padding: 50px;
+  }
+
+  .content-block h4 {
+    font-size: 18px;
+  }
+
+  .title-content {
+    font-size: 25px;
+  }
+
+  .body-content {
+    font-size: 18px;
+    padding:  25px;
+  }
+
+  .content-block {
+    margin: 15px 0;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .line-break-full {
+    width: 86%;
+    margin: 40px auto;
+    height: 1px;
+    background: lightgrey;
+  }
+
+  .section-wrapper {
+    padding: 75px;
+  }
+
+
+  .title-content {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    width: 450px;
+    font-size: 15px;
+  }
+
+  .content-block {
+    width: 30%;
+    padding: 0;
+    justify-content: flex-start;
+  }
+
+  .body-content {
+    padding: 0 5px;
+    font-size: 16px;
+  }
+
+  .content-block i {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (min-width: 1216px) {
+  .section-wrapper {
+    padding: 125px 150px;
+  }
+
+  .subtitle {
+    width: 525px;
+    font-size: 23px;
+  }
+}
+/* 
+@media only screen and (min-width: 1400px) {
+
+  .content-block h4 {
+    font-size: 20px;
+  }
+
+  .boddy-content {
+    font-size: 18px;
+  }
+} */
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1400px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1400px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 1400px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1400px),
+only screen and (                min-resolution: 192dpi) and (min-width: 1400px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 1400px) { 
+  
+
+
+  .section-wrapper {
+    padding: 150px 200px;
+  }
+
+  .content-block h4 {
+    font-size: 20px;
+  }
+
+  .boddy-content {
+    font-size: 18px;
+  }
+}
+

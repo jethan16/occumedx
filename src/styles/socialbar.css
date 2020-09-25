@@ -1,0 +1,11 @@
+.social-bar {
+  width: 125px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icon {
+  border-radius: 100%;
+  font-size: 28px;
+  color: #ce2026
+};

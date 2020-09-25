@@ -1,0 +1,105 @@
+.banner-wrapper {
+  width: 100vw;
+  height: 275px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner-wrapper img {
+  width: 100vw;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.banner-wrapper h1 {
+  font-family: "open sans";
+  width: 350px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #f4f4f9;
+  position: absolute;
+  text-align: start;
+  padding: 0 35px;
+}
+
+.banner-logo {
+  height: 35px;
+  width: 35px;
+  background: url("https://occumedx.s3.us-east-2.amazonaws.com/logo_min.png");
+  background-size: contain;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: 35px;
+  margin-bottom: 35px;
+  /* align-self: flex-end; */
+}
+
+@media only screen and (min-width: 768px) {
+  .banner-wrapper {
+    height: 40vh;
+  }
+
+  .banner-wrapper h1 {
+    font-size: 60px;
+    width: 60%;
+  }
+
+  .banner-logo {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .banner-wrapper {
+    height: 100%;
+  }
+
+  .banner-logo {
+    right: 73%;
+    bottom: 30%;
+  }
+
+
+  .banner-wrapper h1 {
+    font-size: 60px;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1216px) {
+
+  .banner-wrapper h1 {
+    top: 16%;
+    left: 7%;
+    width: 33%;
+    font-size: 70px;
+  }
+
+  .banner-logo {
+    right: 61%;
+    bottom: 37%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .banner-wrapper h1 {
+    width: 30%;
+  } 
+
+  .banner-logo {
+    bottom: 42%;
+    right: 65%;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .banner-logo {
+    bottom: 60%;
+    right: 66.5%;
+  }
+}

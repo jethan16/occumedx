@@ -1,0 +1,32 @@
+.bar {
+  width: 2rem;
+  height: 0.25rem;
+  background: #293132;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  margin-bottom: 5px;
+  transition: 0.4s ease-in-out;
+  transform: rotate(0deg);
+  transform-origin: 3px;
+}
+
+.bar-one {
+  transform: rotate(45deg);
+}
+
+.bar-two {
+  transform: translateX(-150%);
+  opacity: 0;
+  transition: 0.45s ease-out;
+}
+
+.bar-three {
+  transform: rotate(-45deg);
+}
+
+@media only screen and (min-width: 1024px) {
+  .bar {
+    display: none;
+  }
+}

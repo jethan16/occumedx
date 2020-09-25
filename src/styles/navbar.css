@@ -1,0 +1,40 @@
+.nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 25px;
+  z-index: 10;
+  background-color: transparent;
+  transition: 0.35s ease-out;
+  filter: grayscale(100%)
+}
+
+.nav-overlay {
+  background: #f4f4f9;
+  filter: grayscale(0%);
+  padding: 15px;
+  border-bottom: 3px rgba(211, 211, 211, 0.658) solid;
+}
+
+@media only screen and (min-width: 1024px) {
+  .nav {
+    padding: 40px 75px;
+  }
+
+  .nav-overlay {
+    padding: 15px 50px;
+  }
+
+  .nav-logo {
+    display: flex; 
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 1216px) {
+  .nav {
+    padding: 15px 200px;
+  }
+}
