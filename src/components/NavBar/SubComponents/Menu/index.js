@@ -1,36 +1,42 @@
 import React from "react";
-import "./Menu.css";
 import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'gatsby';
+import styled from '@emotion/styled';
+import { css } from '@emotion/core';
+import "./Menu.css";
 
 
 // Imported Sub Components //
 import CallUsButton from "../../../Buttons/CallUs";
 
-const Menu = ({ menuState, screenWidth, inView }) => {
+const NavLink = styled(Link)`
+font-family: 'Montserrat';
+color: #293132;
+padding: 5px 0;
+margin: 0px 10px;
+font-weight: 600;
+display: flex;
+align-items: center;
+
+&.current-page {
+    border-bottom: 2px solid #293132;
+}
+`
+
+const Menu = ({ inView }) => {
   return (
-    <div className={`nav-${menuState === false ? "menu" : "menu-open"} ${inView === true ? 'mt-2' : ''}`}>
-      {screenWidth >= 1024 ? (
-        <div className="col-3 nav-logo">
-          <img
-            src="https://occumedx.s3.us-east-2.amazonaws.com/logo_min.png"
-            width="40px"
-          ></img>
-        </div>
-      ) : (
-        ""
-      )}
-      <div className="nav-links col-3">
-        <a className="nav-link" href="/">
-          Home
-        </a>
-        <a className="nav-link" href="/">
-          About
-        </a>
-        <a className="nav-link" href="/">
-          Services
-        </a>
+    <div className='menu'>
+      <div className='header-first'>
+        <img src="https://www.datocms-assets.com/34814/1601044706-logomin.png" height="50px" ></img>
       </div>
-      <CallUsButton icon={faPhoneAlt} text={"Call Us Today"} />
+      <div className='header-second'>
+        <NavLink to='/' activeClassName='current-page'>HOME</NavLink>
+        <NavLink to='/about/' activeClassName='current-page'>ABOUT</NavLink>
+        <NavLink to='/services/' activeClassName='current-page'>SERVICES</NavLink>
+      </div>
+      <div className='header-third'>
+        <CallUsButton icon={faPhoneAlt} text={"Call Us Today"} />
+      </div>
     </div>
   );
 };
