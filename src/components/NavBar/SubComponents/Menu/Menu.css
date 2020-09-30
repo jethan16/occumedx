@@ -2,10 +2,20 @@
   display: none;
 }
 
+.menu-lift {
+  top: 10px;
+}
+
 @media only screen and (min-width: 1024px) {
 
   .header-first {
-    width: 33.33%
+    display: flex;
+    justify-content: center;
+    width: 33.33%;
+    margin-left: auto;
+  }
+
+  .header-first img {
   }
 
   .header-second {
@@ -16,6 +26,8 @@
 
   .header-third {
     width: 33.33%;
+    display: flex;
+    justify-content: center;
   }
 
   .menu {
@@ -28,8 +40,6 @@
 
   .menu button {
     margin: 0;
-    margin-left: auto;
-    /* width: auto; */
   }
 
   .menu button p {

@@ -6,8 +6,8 @@ export default function Banner({ bannerUrl }) {
     <div className="banner-wrapper">
       <div className="overlay"></div>
       <img src={bannerUrl}></img>
-        <h1>WE WANT TO HEAR FROM YOU</h1>
-        <div className='banner-logo'></div>
+      <h1>WE WANT TO HEAR FROM YOU</h1>
+      <div className='banner-logo'></div>
     </div>
   );
 }

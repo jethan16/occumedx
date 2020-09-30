@@ -76,11 +76,7 @@ function Form() {
           isCallButton={false}
         />
         <div className="line-break-vertical"></div>
-        <div className="line-break-vertical"></div>
-        <div className="line-break-vertical"></div>
-        <div className="line-break-vertical"></div>
         <p>OR</p>
-        <div className="line-break-vertical"></div>
         <div className="line-break-vertical"></div>
         <Button icon={faPhoneAlt} text={"Call Us Today"} isCallButton={true}/>
       </div>

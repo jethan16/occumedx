@@ -26,7 +26,11 @@ module.exports = {
           },
           {
             family: `Open Sans`,
-            variants: [`300`, `400`, `700`]
+            variants: [`300`, `400`, `500`, `700`]
+          },
+          {
+            family: `Work Sans`,
+            variants: [`300`, `400`, `500`, `700`]
           },
         ],
       },

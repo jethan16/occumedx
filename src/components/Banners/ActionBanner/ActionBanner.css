@@ -1,0 +1,47 @@
+.action-banner {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: #ce2029;
+}
+
+.action-banner h1 {
+    font-size: 24px;
+    margin-top: 50px;
+    color: #f4f4f9;
+}
+
+.action-banner button {
+    padding: 10px 0;
+    font-size: 18px;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    background: #293132;
+}
+
+@media only screen and (min-width: 1024px) {
+    .action-banner {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 25px 50px;
+    }
+
+    .action-banner h1 {
+        margin: 0;
+        font-size: 26px;
+        margin-left: 50px;
+    }
+
+    .action-banner button {
+        width: 30%;
+        margin: 30px 50px;
+    }
+}
+
+/* @media only screen and (min-width: 1216px) {
+    .action-banner {
+    }
+} */

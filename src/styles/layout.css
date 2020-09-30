@@ -5,7 +5,7 @@
 }
 
 .App {
-  background: #f4f4f9;
+  /* background: #f4f4f9; */
   color: #193132;
 }
 
@@ -33,7 +33,7 @@ button,
 select,
 option {
   font-family: "Open Sans";
-  font-weight: '300';
+  font-weight: '500';
 }
 
 select,
@@ -47,10 +47,9 @@ a {
 }
 
 button {
-  font-family: 'Montserrat';
-  border-radius: 3px;
-  border: solid 2px #19313262;
-  background: transparent;
+  font-family: 'Work Sans';
+  border-radius: 2px;
+  border: solid 2px #293132a6;
   font-size: 16px;
   padding: 5px 10px;
   margin: 10px auto;
@@ -118,10 +117,11 @@ button:active {
 
 .body-content {
   padding: 10px;
-  text-align: center;
-  font-size: 14px;
-  order: 3;
+  text-align: start;
+  font-size: 18px;
   font-weight: 300;
+  text-align: center;
+  font-family: 'Open Sans';
 }
 
 .content-block {
@@ -129,19 +129,7 @@ button:active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px 0;
-  margin: 20px 0;
 }
-
-
-.content-block i {
-  font-size: 30px;
-}
-
-.content-block h4 {
-  font-size: 16px;
-}
-
 
 .subtitle {
   width: 300px;
@@ -184,8 +172,10 @@ button:active {
 }
 
 .section-wrapper {
-  padding: 25px;
-  padding-bottom: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 35px;
 }
 
 .overlay {
@@ -199,7 +189,7 @@ button:active {
 
 @media only screen and (min-width: 768px) {
   .section-wrapper {
-    padding: 50px;
+    padding: 100px;
   }
 
   .content-block h4 {
@@ -211,7 +201,7 @@ button:active {
   }
 
   .body-content {
-    font-size: 18px;
+    font-size: 20px;
     padding:  25px;
   }
 
@@ -223,15 +213,8 @@ button:active {
 
 @media only screen and (min-width: 1024px) {
 
-  .line-break-full {
-    width: 86%;
-    margin: 40px auto;
-    height: 1px;
-    background: lightgrey;
-  }
-
   .section-wrapper {
-    padding: 75px;
+    padding: 100px 25px;
   }
 
 
@@ -244,25 +227,17 @@ button:active {
     font-size: 15px;
   }
 
-  .content-block {
-    width: 30%;
-    padding: 0;
-    justify-content: flex-start;
-  }
-
   .body-content {
     padding: 0 5px;
-    font-size: 16px;
+    font-size: 18px;
+    text-align: center;
   }
 
-  .content-block i {
-    font-size: 32px;
-  }
 }
 
 @media only screen and (min-width: 1216px) {
   .section-wrapper {
-    padding: 125px 150px;
+    padding: 175px 25px;
   }
 
   .subtitle {
@@ -293,15 +268,8 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 1400px)
 
 
   .section-wrapper {
-    padding: 150px 200px;
+    padding: 150px 75px;
   }
 
-  .content-block h4 {
-    font-size: 20px;
-  }
-
-  .boddy-content {
-    font-size: 18px;
-  }
 }
 

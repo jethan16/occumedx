@@ -1,11 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-has-content, jsx-a11y/anchor-is-valid*/
 
-import React, { useState } from "react";
+import React, { useState, createContext } from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import { StaticQuery, graphql } from "gatsby";
 import { HelmetDatoCms } from "gatsby-source-datocms";
-
 
 import "../styles/layout.css"
 
@@ -13,13 +12,11 @@ import NavBar from "../components/NavBar"
 import Footer from "../components/footer"
 import SocialBar from "../components/SocialBar"
 
+export const inViewContext = createContext(null);
+
 const TemplateWrapper = ({ children }) => {
-  // const { ref, inView, entry } = useInView({
-  //   // Hook Options //
-  //   threshold: 1,
-  // });
 
-
+  const [ inViewState, setInViewState ] = useState()
 
   return (
     <StaticQuery
@@ -66,17 +63,30 @@ const TemplateWrapper = ({ children }) => {
           }
         }
       `}
-      render={data => (
+      
+      render={data => {
+
+      
+        return (
         <>
+
           <HelmetDatoCms
             favicon={data.datoCmsSite.faviconMetaTags}
             seo={data.datoCmsHome.seoMetaTags}
           />
-              <NavBar></NavBar>
+          <inViewContext.Provider value={{inViewState, toggleInView: (inViewFromIndex) => {
+            console.log('Context Function Called', inViewFromIndex) 
+            setInViewState(inViewFromIndex)
+          }}}>
+              <NavBar
+                viewState={inViewState}
+              ></NavBar>
               {children}
               <Footer data={data.datoCmsFooter}></Footer>
+          </inViewContext.Provider>
         </>
-      )}
+        )
+      }}
     />
   );
 };

@@ -9,24 +9,19 @@
   padding: 35px 25px;
   z-index: 10;
   background-color: transparent;
+  filter: grayscale(100%);
   transition: 0.35s ease-out;
-  filter: grayscale(100%)
 }
 
 .nav-overlay {
-  background: #f4f4f9;
+  background: #293132;
   filter: grayscale(0%);
   padding: 15px;
-  border-bottom: 3px rgba(211, 211, 211, 0.658) solid;
-}
-
-.hamburger-menu-logo {
-  display: none;
 }
 
 @media only screen and (min-width: 1024px) {
   .nav {
-    padding: 40px 75px;
+    padding: 75px;
   }
 
   .nav-overlay {
@@ -41,12 +36,10 @@
 
 @media only screen and (min-width: 1216px) {
   .nav {
-    padding: 40px 150px;
+    padding: 75px 150px;
   }
-}
 
-@media only screen and (min-width: 1400px) {
-  .nav {
-    padding: 60px 150px;
+  .nav-overlay {
+    padding: 15px 150px;
   }
 }

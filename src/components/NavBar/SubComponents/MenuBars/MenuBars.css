@@ -1,7 +1,6 @@
 .bar {
   width: 2rem;
   height: 0.25rem;
-  background: #293132;
   border-radius: 10px;
   transition: all 0.3s linear;
   position: relative;
@@ -9,6 +8,14 @@
   transition: 0.4s ease-in-out;
   transform: rotate(0deg);
   transform-origin: 3px;
+}
+
+.bar-dark {
+  background: #293132;
+}
+
+.bar-light {
+  background: #f4f4f9;
 }
 
 .bar-one {

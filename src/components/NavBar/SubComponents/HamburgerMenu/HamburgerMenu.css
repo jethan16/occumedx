@@ -3,7 +3,7 @@
     top: 120px;
     left: 0;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@
     top: 120px;
     left: 0;
     width: 0%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,6 +27,11 @@
     background: #f4f4f9;
     z-index: 10;
     transition: .25s ease-in-out;
+}
+
+.menu-higher-pos {
+    transition: .25s ease-in-out;
+    top: 80px
 }
 
 .nav-links-hide {
@@ -44,6 +49,10 @@
 
 @media only screen and (min-width: 1024px) {
     .hamburger-menu {
+        display: none;
+    }
+
+    .hamburger-menu-logo{
         display: none;
     }
 }
