@@ -1,56 +1,98 @@
 import React from 'react'
-import { graphql } from 'gatsby'
-import { HelmetDatoCms } from 'gatsby-source-datocms'
-import Img from 'gatsby-image'
-import Layout from "../components/layout"
+import { graphql, Link } from 'gatsby'
+import Layout, { inViewContext } from "../components/layout"
+import { useInView } from 'react-intersection-observer';
+import { faMapMarkerAlt, faDollarSign, faStar, faChevronDown, faBookMedical, faBolt, faChartLine, faAmbulance, faCompass } from '@fortawesome/free-solid-svg-icons'
+import "../styles/about.css"
+import SocialBar from "../components/SocialBar"
+import Contact from "../components/Contact"
 
-const About = ({ data: { about } }) => {
+const About = ({ data }) => {
   
-console.log('about',about)
+  const contentBlocks = [
+    [
+      {
+        icon: faMapMarkerAlt,
+        title: data.about.titleOne,
+        text: data.about.bodyOne,
+        buttonText: 'See More Services',
+        linkPath: '/services/'
+      },
+      {
+        icon: faDollarSign,
+        title: data.about.titleTwo,
+        text: data.about.bodyTwo,
+        buttonText: 'Learn More About Us',
+        linkPath: '/about/'
+      },
+      {
+        icon: faStar,
+        title: data.about.titleThree,
+        text: data.about.bodyThree,
+        buttonText: 'See Our Partners',
+        linkPath: '#partners'
+      }
+    ]
+  ]
+  const componentTitle = data.aboutContent.componentTitle.toUpperCase()
+
+  const { ref, inView, entry } = useInView({
+    // Hook Options //
+    threshold: 1,
+  });
 
   return(
-
     <Layout>
-    <article className="sheet">
-      <HelmetDatoCms seo={about.seoMetaTags} />
-      <div className="sheet__inner">
-        <h1 className="sheet__title">{about.title}</h1>
-        <p className="sheet__lead">{about.subtitle}</p>
-        <div className="sheet__gallery">
-          <Img fluid={about.photo.fluid} />
-        </div>
-        <div
-          className="sheet__body"
-          dangerouslySetInnerHTML={{
-            __html: about.bioNode.childMarkdownRemark.html,
-          }}
-        />
-      </div>
-    </article>
-  </Layout>
-    );
-        }
+      <inViewContext.Consumer>
+      { context => {
+        {inView === true ? context.toggleInView(inView) : context.toggleInView(inView);}
+        return(
+        <>
+          <div className='about-page section-wrapper'>
+            <div className='about-page-content'>
+              <h1 className='title mb-3'>{componentTitle}</h1>
+              <p className='body-content'>{data.aboutContent.componentBodyOne}</p>
+              <p className='body-content'>{data.aboutContent.componentBodyTwo}</p>
+              <p className='body-content'>{data.aboutContent.componentBodyThree}</p>
+            </div>
+            <Link to='/services/' className='navigation-banner'>
+              <h1 className='navigation-banner-button'>SERVICES</h1>
+            </Link>
+          </div>
+            <div className='social-wrapper'>
+              <h1 className='text-center'>STAY CONNECTED WITH US</h1>
+              <div className='vertical-line-break'></div>
+              <SocialBar/>
+            </div>
+          <Contact/>
+        </>
+        )
+      }}
+      </inViewContext.Consumer>
+    </Layout>
+  );
+};
 
-export default About
+export default About;
 
-export const query = graphql`
+
+  export const query = graphql`
   query AboutQuery {
-    about: datoCmsAboutPage {
-      seoMetaTags {
-        ...GatsbyDatoCmsSeoMetaTags
-      }
-      title
-      subtitle
-      photo {
-        fluid(maxWidth: 600, imgixParams: { fm: "jpg", auto: "compress" }) {
-          ...GatsbyDatoCmsSizes
-        }
-      }
-      bioNode {
-        childMarkdownRemark {
-          html
-        }
-      }
+    aboutContent: datoCmsAboutPage {
+      componentBodyThree
+      componentBodyTwo
+      componentTitle
+      componentBodyOne
+    }
+    about: datoCmsHomePageAboutOverview {
+      bodyOne
+      bodyThree
+      bodyTwo
+      titleOne
+      titleThree
+      titleTwo
+      componentOverviewBody
+      componentTitle
     }
   }
 `

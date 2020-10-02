@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from '@emotion/styled';
+import CallUsButton from "../../../Buttons/CallUs/index"
 
 import "./HamburgerMenu.css"
 
@@ -17,10 +18,13 @@ border-bottom: 2px solid transparent;
 
 const HamburgerMenu = ({ menuState, inView }) => {
     return(
-        <menu className={`${menuState ? 'menu-open' : 'menu-closed'} ${inView ? '' : 'menu-higher-pos'}`}>
+        <menu className={`hamburger-menu ${menuState ? 'menu-open' : 'menu-closed'} ${inView ? '' : 'menu-higher-pos'}`}>
             <NavLink to='/' activeClassName='current-page' className={menuState === true ? 'nav-links-show' : 'nav-links-hide'}>HOME</NavLink>
             <NavLink to='/about/' activeClassName='current-page' className={menuState === true ? 'nav-links-show' : 'nav-links-hide'}>ABOUT</NavLink>
             <NavLink to='/services/' activeClassName='current-page' className={menuState === true ? 'nav-links-show' : 'nav-links-hide'}>SERVICES</NavLink>
+            <div className={menuState === true ? 'nav-links-show' : 'nav-links-hide'}>
+            <CallUsButton />
+            </div>
         </menu>
     )
 };

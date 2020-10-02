@@ -1,0 +1,39 @@
+.partners-banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 50px 10px;
+}
+
+.partners-banner h6 {
+    font-family: 'work sans';
+    color: #293132;
+    width: 100%;
+    margin: 20px auto;
+    font-size: 30px;
+}
+
+.partners-banner img {
+    width: 50%;
+    object-fit: contain;
+    margin: 35px;
+}
+
+@media only screen and (min-width: 768px) {
+    .partners-banner img {
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 1216px) {
+    .partners-banner img {
+        width: 13%;
+        margin: 20px;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    .partners-banner img {
+        width: 10%;
+    }
+}

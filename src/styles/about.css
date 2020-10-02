@@ -1,0 +1,151 @@
+.about-page {
+    background: #f4f4f9;
+    padding-top: 150px;
+    padding-bottom: 10px;
+}
+
+.about-page-content .title {
+    text-align: start;
+    border-left: solid 2px #ce2029;
+    padding-left: 15px;
+}
+
+.about-page-content .body-content {
+    margin: 10px 0;
+    text-align: start;
+}
+
+.vertical-line-break { 
+    display: none;
+}
+
+.navigation-banner {
+    background: url('https://www.datocms-assets.com/34814/1601649779-thisisengineering-raeng-8ys04veb1tq-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 325px;
+}
+
+.navigation-banner h1 {
+    color: #f4f4f9;
+    font-size: 20px;
+}
+
+.navigation-banner-button {
+    width: 100%;
+    padding: 20px;
+    background: #ce2029;
+}
+
+.social-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    color: #f4f4f9;
+    background: #293132;
+}
+
+.social-wrapper h1 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+    .about-page .body-content {
+        padding: 0 15px;
+        margin: 25px 0;
+    }
+
+    .navigation-banner {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .about-page {
+        padding: 150px 175px;
+        padding-bottom: 50px;
+    }
+
+    .about-page-content .title {
+        text-align: start;
+        border-left: solid 2px #ce2029;
+        padding-left: 25px;
+    }
+
+    .about-page-content .body-content {
+        text-align: start;
+    }
+  
+    .navigation-banner {
+        width: 75%;
+        margin-top: 50px;
+        align-self: center;
+    }
+ 
+    .social-wrapper {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+    }
+
+    .social-wrapper h1 {
+        margin: 0;
+        font-size: 30px;
+    }
+
+    .vertical-line-break {
+        display: block;
+        width: 2px;
+        height: 30px;
+        margin: 0 25px;
+        background: #ce2029;
+    }
+
+    .fa-facebook-square, .fa-instagram-square, .fa-linkedin, .fa-twitter-square {
+        font-size: 40px;
+        margin: 5px;
+    }
+}
+
+@media only screen and (min-width: 1216px) {
+    .about-page {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .navigation-banner {
+        width: 50%;
+        margin: 0;
+    }
+
+    .about-page-content {
+        width: 50%;
+        margin-right: 25px;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+
+    .about-page {
+        padding: 100px 300px;
+        padding-top: 200px;
+        justify-content: center;
+    }
+
+    .about-page-content {
+        margin-right: 50px;
+    }
+
+    .navigation-banner {
+        width: 35%;
+        height: 350px;
+    }
+
+}

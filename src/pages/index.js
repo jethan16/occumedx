@@ -1,24 +1,23 @@
 import React, { useContext, useState } from 'react'
 import { graphql } from 'gatsby'
 import Layout, { inViewContext } from "../components/layout"
+import { useInView } from 'react-intersection-observer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faDollarSign, faStar, faChevronDown, faBookMedical, faBolt, faChartLine, faAmbulance, faCompass } from '@fortawesome/free-solid-svg-icons'
-import { useInView } from 'react-intersection-observer';
 
 
 import "../styles/app.css"
 import "../styles/home.css"
 
 import Section from "../components/Section"
-// import CallUsButton from "../components/Buttons/CallUs";
+import Partners from "../components/Banners/PartnersBanner"
 import ActionBanner from "../components/Banners/ActionBanner/index"
 import Contact from "../components/Contact/index"
 
 const IndexPage = ({ data }) => {
  
-  const [inViewState, setInViewState] = useState()
 
-  const contentBlocks = [
+const contentBlocks = [
     [
       {
         icon: faMapMarkerAlt,
@@ -127,6 +126,7 @@ return (
           sectionStyle={'services'}
           cardStyle={'alternate'}
         />
+        <Partners partners={data.partners.companyLogos}/>
         <Contact />
       </div>
     </Layout>
@@ -179,6 +179,11 @@ export const query = graphql`
       titleFive
       titleSix
       titleThree
+    }
+    partners: datoCmsPartner {
+      companyLogos {
+        url
+      }
     }
   }
 `

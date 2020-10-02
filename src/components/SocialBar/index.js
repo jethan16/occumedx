@@ -1,7 +1,5 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faFaceBookSquare } from '@fortawesome/free-brands-svg-icons'
-// import { fabFaceBookSquare } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookSquare, faInstagramSquare, faLinkedin, faTwitterSquare } from "@fortawesome/free-brands-svg-icons"
 import "../../styles/socialbar.css";
 

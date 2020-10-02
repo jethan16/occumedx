@@ -11,6 +11,7 @@
     color: #f4f4f9;
 }
 
+
 .action-banner button {
     padding: 10px 0;
     font-size: 18px;
@@ -19,29 +20,36 @@
     margin-top: 35px;
     margin-bottom: 25px;
     background: #293132;
+    color: #F4F4F9;
+    border: none;
 }
 
 @media only screen and (min-width: 1024px) {
     .action-banner {
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         padding: 25px 50px;
     }
 
     .action-banner h1 {
         margin: 0;
         font-size: 26px;
-        margin-left: 50px;
+        /* margin-left: 50px; */
     }
 
     .action-banner button {
-        width: 30%;
-        margin: 30px 50px;
+        width: 300px;
+        margin: 0px;
     }
 }
 
-/* @media only screen and (min-width: 1216px) {
+@media only screen and (min-width: 1700px) {
     .action-banner {
+        justify-content: center;
     }
-} */
+
+    .action-banner * {
+        margin: 0px 50px;
+    }
+}

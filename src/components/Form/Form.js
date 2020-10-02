@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Form.css";
 
 // Imported Components //
-import Button from "../Buttons/CallUs";
+import CallUsButton from "../Buttons/CallUs";
 import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 
 function Form() {
@@ -70,15 +70,15 @@ function Form() {
         />
       </div>
       <div className='button-group'>
-        <Button
-          icon={""}
-          text={"submit"}
-          isCallButton={false}
-        />
+        <button>submit</button>
         <div className="line-break-vertical"></div>
         <p>OR</p>
         <div className="line-break-vertical"></div>
-        <Button icon={faPhoneAlt} text={"Call Us Today"} isCallButton={true}/>
+        <CallUsButton 
+                text={'Call Us Today'}
+                icon={faPhoneAlt}
+                link={'tel:7045746116'}
+            />
       </div>
     </form>
   );

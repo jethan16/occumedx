@@ -48,15 +48,13 @@ a {
 
 button {
   font-family: 'Work Sans';
-  border-radius: 2px;
-  border: solid 2px #293132a6;
   font-size: 16px;
   padding: 5px 10px;
   margin: 10px auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 185px;
+  width: 170px;
 }
 
 .button-icon {
@@ -66,7 +64,7 @@ button {
 .call-us-button {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -119,7 +117,6 @@ button:active {
   padding: 10px;
   text-align: start;
   font-size: 18px;
-  font-weight: 300;
   text-align: center;
   font-family: 'Open Sans';
 }
@@ -231,6 +228,10 @@ button:active {
     padding: 0 5px;
     font-size: 18px;
     text-align: center;
+  }
+
+  .line-break-vertical {
+    display: none;
   }
 
 }

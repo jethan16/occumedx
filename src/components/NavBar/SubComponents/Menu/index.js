@@ -33,7 +33,7 @@ const Menu = ({ inView }) => {
         <NavLink to='/services/'>SERVICES</NavLink>
       </div>
       <div className='header-third'>
-        <CallUsButton icon={faPhoneAlt} text={"Call Us Today"} />
+        <CallUsButton />
       </div>
     </div>
   );
