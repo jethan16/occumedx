@@ -45,10 +45,6 @@ const About = ({ data }) => {
 
   return(
     <Layout>
-      {/* <inViewContext.Consumer>
-      { context => {
-        {inView === true ? context.toggleInView(inView) : context.toggleInView(inView);} */}
-        {/* return( */}
         <>
           <div className='about-page section-wrapper'>
             <div className='about-page-content'>
@@ -71,9 +67,6 @@ const About = ({ data }) => {
             ContactBannerUrl={"https://occumedx.s3.us-east-2.amazonaws.com/team.jpg"}
           />
         </>
-        {/* ) */}
-      {/* }}
-      </inViewContext.Consumer> */}
     </Layout>
   );
 };

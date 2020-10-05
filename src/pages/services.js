@@ -55,23 +55,16 @@ const Services = ({ data }) => {
 
     return(
       <Layout>
-        {/* <inViewContext.Consumer>
-          { context => {
-            {inView === true ? context.toggleInView(inView) : context.toggleInView(inView);}
-            return( */}
-              <div className='services-page'>
-                <Section 
-                  componentTitle={data.services.componentTitle}
-                  componentOverviewBody={data.services.componentOverviewBody}
-                  contentBlock={contentBlocks}
-                  sectionStyle={'services'}
-                  cardStyle={'alternate'}
-                  backgroundColor={`{'#f4f4f9'}`}
-                />
-              </div>
-            )
-          {/* }}
-        </inViewContext.Consumer> */}
+        <div className='services-page'>
+          <Section 
+            componentTitle={data.services.componentTitle}
+            componentOverviewBody={data.services.componentOverviewBody}
+            contentBlock={contentBlocks}
+            sectionStyle={'services'}
+            cardStyle={'alternate'}
+            backgroundColor={`{'#f4f4f9'}`}
+          />
+        </div>
       </Layout>
     )
 }
