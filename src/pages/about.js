@@ -67,7 +67,9 @@ const About = ({ data }) => {
               <div className='vertical-line-break'></div>
               <SocialBar/>
             </div>
-          <Contact/>
+          <Contact
+            ContactBannerUrl={"https://occumedx.s3.us-east-2.amazonaws.com/team.jpg"}
+          />
         </>
         )
       }}

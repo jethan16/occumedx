@@ -1,5 +1,6 @@
 .banner-wrapper {
   width: 100vw;
+  /* height: 40vh; */
   position: relative;
   display: flex;
   align-items: center;
@@ -8,6 +9,7 @@
 
 .banner-wrapper img {
   width: 100vw;
+  /* height: 350px; */
   object-position: center;
   object-fit: cover;
   border-bottom: solid 1px black;
@@ -34,7 +36,6 @@
   bottom: 0;
   margin-right: 35px;
   margin-bottom: 35px;
-  /* align-self: flex-end; */
 }
 
 @media only screen and (min-width: 768px) {
