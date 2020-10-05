@@ -10,7 +10,6 @@ import "../styles/layout.css"
 
 import NavBar from "../components/NavBar"
 import Footer from "../components/footer"
-import SocialBar from "../components/SocialBar"
 
 export const inViewContext = createContext(null);
 

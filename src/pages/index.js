@@ -128,7 +128,9 @@ return (
           color={'##f4f4f9'}
           backgroundColor={'#293132'}
         />
-        {/* <Partners partners={data.partners.companyLogos}/> */}
+        <div id='partners'>
+          <Partners partners={data.partners.companyLogos}/>
+        </div>
         <Contact 
           ContactBannerUrl={"https://occumedx.s3.us-east-2.amazonaws.com/team.jpg"}
         />
