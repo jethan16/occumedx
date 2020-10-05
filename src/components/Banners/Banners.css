@@ -10,6 +10,7 @@
   width: 100vw;
   object-position: center;
   object-fit: cover;
+  border-bottom: solid 1px black;
 }
 
 .banner-wrapper h1 {

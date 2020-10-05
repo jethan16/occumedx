@@ -1,17 +1,78 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
+import { useInView } from 'react-intersection-observer';
 import { HelmetDatoCms } from 'gatsby-source-datocms'
-import Layout from "../components/layout"
+import Layout, {inViewContext} from "../components/layout"
+import Section from "../components/Section"
+import { faMapMarkerAlt, faDollarSign, faStar, faChevronDown, faBookMedical, faBolt, faChartLine, faAmbulance, faCompass } from '@fortawesome/free-solid-svg-icons'
 
-const Services = ({ data: { services } }) => {
+import "../styles/services.css"
 
-    console.log(services)
+const Services = ({ data }) => {
+
+    const { ref, inView, entry } = useInView({
+      // Hook Options //
+      threshold: 1,
+    });
+
+    const contentBlocks = [
+        {
+          icon: faChartLine,
+          title: data.services.titleOne,
+          text: data.services.bodyOne,
+          buttonText: '',
+          linkPath: '/services/'
+        },
+        {
+          icon: faBookMedical,
+          title: data.services.titleTwo,
+          text: data.services.bodyTwo,
+          buttonText: '',
+          linkPath: '/services/'
+        },
+        {
+          icon: faBolt,
+          title: data.services.titleThree,
+          text: data.services.bodyThree,
+          buttonText: '',
+          linkPath: '/services/'
+        },
+        {
+          icon: faAmbulance,
+          title: data.services.titleFour,
+          text: data.services.bodyFour,
+          buttonText: '',
+          linkPath: '/services/'
+        },
+        {
+          icon: faCompass,
+          title: data.services.titleFive,
+          text: data.services.bodyFive,
+          buttonText: '',
+          linkPath: '/services/'
+        },
+    ]
 
     return(
-        <Layout>
-            <h1>{services.title}</h1>
-            <h4>{services.subtitle}</h4>
-        </Layout>
+      <Layout>
+        <inViewContext.Consumer>
+          { context => {
+            {inView === true ? context.toggleInView(inView) : context.toggleInView(inView);}
+            return(
+              <div className='services-page'>
+                <Section 
+                  componentTitle={data.services.componentTitle}
+                  componentOverviewBody={data.services.componentOverviewBody}
+                  contentBlock={contentBlocks}
+                  sectionStyle={'services'}
+                  cardStyle={'alternate'}
+                  backgroundColor={`{'#f4f4f9'}`}
+                />
+              </div>
+            )
+          }}
+        </inViewContext.Consumer>
+      </Layout>
     )
 }
 
@@ -19,12 +80,21 @@ export default Services;
 
 export const query = graphql`
   query ServicesQuery {
-    services: datoCmsServicesPage {
-      seoMetaTags {
-        ...GatsbyDatoCmsSeoMetaTags
-      }
-      title
-      subtitle
+    services: datoCmsHomePageServicesOverview {
+      bodyFive
+      bodyFour
+      bodyOne
+      bodySix
+      bodyThree
+      bodyTwo
+      componentTitle
+      componentOverviewBody
+      titleOne
+      titleTwo
+      titleFour
+      titleFive
+      titleSix
+      titleThree
     }
   }
 `

@@ -18,11 +18,11 @@ export default function ContentBlocks({ icon, title, text, cardStyle, buttonText
       <p className="body-content">{text}</p>
       {cardStyle === 'default' ? (
 
-        <button className='button'>
           <Link to={linkPath}>
-          {buttonText}
+            <button className='button'>
+              {buttonText}
+            </button>
           </Link>
-        </button>
         
         ) : ''}
     </section>

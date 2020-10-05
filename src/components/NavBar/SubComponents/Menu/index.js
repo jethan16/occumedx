@@ -31,6 +31,7 @@ const Menu = ({ inView }) => {
         <NavLink to='/'>HOME</NavLink>
         <NavLink to='/about/'>ABOUT</NavLink>
         <NavLink to='/services/'>SERVICES</NavLink>
+        <NavLink to='/contact/'>CONTACT</NavLink>
       </div>
       <div className='header-third'>
         <CallUsButton />

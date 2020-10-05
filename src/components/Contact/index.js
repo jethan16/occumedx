@@ -4,12 +4,12 @@ import "../../styles/home.css";
 import Form from "../Form/Form"
 import Banner from "../Banners/index"
 
-const Contact = () => (
+const Contact = ({ ContactBannerUrl }) => (
 
     <section className="contact-section">
         <div className='banner'>
             <Banner
-              bannerUrl={"https://occumedx.s3.us-east-2.amazonaws.com/team.jpg"}
+              bannerUrl={ContactBannerUrl}
             />
         </div>
         <div className="contact-lower p-4">

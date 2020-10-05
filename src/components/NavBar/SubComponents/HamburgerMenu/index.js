@@ -19,9 +19,11 @@ border-bottom: 2px solid transparent;
 const HamburgerMenu = ({ menuState, inView }) => {
     return(
         <menu className={`hamburger-menu ${menuState ? 'menu-open' : 'menu-closed'} ${inView ? '' : 'menu-higher-pos'}`}>
-            <NavLink to='/' activeClassName='current-page' className={menuState === true ? 'nav-links-show' : 'nav-links-hide'}>HOME</NavLink>
-            <NavLink to='/about/' activeClassName='current-page' className={menuState === true ? 'nav-links-show' : 'nav-links-hide'}>ABOUT</NavLink>
-            <NavLink to='/services/' activeClassName='current-page' className={menuState === true ? 'nav-links-show' : 'nav-links-hide'}>SERVICES</NavLink>
+            <NavLink to='/' className={menuState === true ? 'nav-links-show' : 'nav-links-hide'}>HOME</NavLink>
+            <NavLink to='/about/' className={menuState === true ? 'nav-links-show' : 'nav-links-hide'}>ABOUT</NavLink>
+            <NavLink to='/services/' className={menuState === true ? 'nav-links-show' : 'nav-links-hide'}>SERVICES</NavLink>
+            <NavLink to='/contact/' className={menuState === true ? 'nav-links-show' : 'nav-links-hide'}>CONTACT</NavLink>
+
             <div className={menuState === true ? 'nav-links-show' : 'nav-links-hide'}>
             <CallUsButton />
             </div>

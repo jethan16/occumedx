@@ -5,8 +5,8 @@ import ContentBlock from "../ContentBlocks/index"
 
 
 
-const Section = ({ componentTitle, componentOverviewBody, contentBlock, sectionStyle, cardStyle }) => (
-    <main className={`section-wrapper ${sectionStyle === 'about' ? '' : 'services-section'}`} style={{backgroundColor: '#293132'}}>
+const Section = ({ componentTitle, componentOverviewBody, contentBlock, sectionStyle, cardStyle, color, backgroundColor }) => (
+    <main className={`section-wrapper ${sectionStyle === 'about' ? '' : 'services-section'}`} style={{background: backgroundColor}}>
         { sectionStyle === 'about' ? (
             <>
             <div className='about-overlay'></div>

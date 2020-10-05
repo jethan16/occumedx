@@ -15,12 +15,10 @@ export default function CallUsButton({
 
   return (
     <button>
-      <p>
         <a href='tel:7045746116'  className="call-us-button">
           <FontAwesomeIcon className='button-icon' icon={faPhoneAlt} />
           Call Us Today
         </a>
-      </p>
     </button>
   );
 }

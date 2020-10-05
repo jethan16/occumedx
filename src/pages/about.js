@@ -6,6 +6,8 @@ import { faMapMarkerAlt, faDollarSign, faStar, faChevronDown, faBookMedical, faB
 import "../styles/about.css"
 import SocialBar from "../components/SocialBar"
 import Contact from "../components/Contact"
+import Partner from "../components/Banners/PartnersBanner"
+import PartnerBanner from '../components/Banners/PartnersBanner';
 
 const About = ({ data }) => {
   
@@ -59,6 +61,7 @@ const About = ({ data }) => {
               <h1 className='navigation-banner-button'>SERVICES</h1>
             </Link>
           </div>
+            <PartnerBanner partners={data.partners.companyLogos}/>
             <div className='social-wrapper'>
               <h1 className='text-center'>STAY CONNECTED WITH US</h1>
               <div className='vertical-line-break'></div>
@@ -93,6 +96,11 @@ export default About;
       titleTwo
       componentOverviewBody
       componentTitle
+    }
+    partners: datoCmsPartner {
+      companyLogos {
+        url
+      }
     }
   }
 `

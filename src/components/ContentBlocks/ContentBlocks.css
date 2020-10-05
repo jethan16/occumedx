@@ -40,8 +40,8 @@
   padding: 15px 0;
 }
 
-.card button a {
-  color: #f4f4f9
+.card a {
+  width: 100%;
 }
 
 .card h4 {

@@ -125,9 +125,13 @@ return (
           contentBlock={contentBlocks[1]}
           sectionStyle={'services'}
           cardStyle={'alternate'}
+          color={'##f4f4f9'}
+          backgroundColor={'#293132'}
         />
         <Partners partners={data.partners.companyLogos}/>
-        <Contact />
+        <Contact 
+          ContactBannerUrl={"https://occumedx.s3.us-east-2.amazonaws.com/team.jpg"}
+        />
       </div>
     </Layout>
   )
