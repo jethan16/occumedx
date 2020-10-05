@@ -55,10 +55,10 @@ const Services = ({ data }) => {
 
     return(
       <Layout>
-        <inViewContext.Consumer>
+        {/* <inViewContext.Consumer>
           { context => {
             {inView === true ? context.toggleInView(inView) : context.toggleInView(inView);}
-            return(
+            return( */}
               <div className='services-page'>
                 <Section 
                   componentTitle={data.services.componentTitle}
@@ -70,8 +70,8 @@ const Services = ({ data }) => {
                 />
               </div>
             )
-          }}
-        </inViewContext.Consumer>
+          {/* }}
+        </inViewContext.Consumer> */}
       </Layout>
     )
 }

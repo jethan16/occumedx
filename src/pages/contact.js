@@ -14,10 +14,10 @@ const Contact = ({ data }) => {
 
     return(
         <Layout>
-            <inViewContext.Consumer>
+            {/* <inViewContext.Consumer>
                 { context => {
                     {inView === true ? context.toggleInView(inView) : context.toggleInView(inView);}
-                    return(
+                    return( */}
                         <>
                             <div className='contact-page section-wrapper'>
                                 <div className='overlay-color'></div>
@@ -33,8 +33,8 @@ const Contact = ({ data }) => {
                             </div>   
                         </>
                     )
-                }}
-            </inViewContext.Consumer>
+                {/* }}
+            </inViewContext.Consumer> */}
         </Layout>
     )
 }

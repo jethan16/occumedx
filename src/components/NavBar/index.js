@@ -5,7 +5,6 @@ import "../../styles/navbar.css";
 import MenuBars from "./SubComponents/MenuBars";
 import HamburgerMenu from "./SubComponents/HamburgerMenu"
 import Menu from "./SubComponents/Menu";
-import { inViewContext } from "../../provider"
 
 const NavBar = ({viewState}) => {
   const [menuState, setMenuState] = useState(false);
@@ -19,7 +18,7 @@ const NavBar = ({viewState}) => {
   console.log(viewState)
 
   return (
-            <nav className={`nav ${viewState === false ? "nav-overlay" : ""}`}>
+            <nav className={`nav ${viewState === true ? "" : "nav-overlay"}`}>
               <img className='hamburger-menu-logo' src="https://www.datocms-assets.com/34814/1601044706-logomin.png" height="50px" ></img>
               <MenuBars handleMenuChange={handleMenuChange} menuState={menuState} inView={viewState}/>
               <Menu menuState={menuState} inView={viewState}/>
