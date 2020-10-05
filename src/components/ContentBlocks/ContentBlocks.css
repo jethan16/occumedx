@@ -51,6 +51,10 @@
   font-size: 18px;
 }
 
+.svg-inline--fa {
+  font-size: '';
+}
+
 .fa-map-marker-alt, .fa-dollar-sign, .fa-star {
   font-size: 35px;
   margin-top: 75px
