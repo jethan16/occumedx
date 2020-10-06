@@ -45,7 +45,7 @@ const About = ({ data }) => {
   return(
     <Layout>
         <>
-          <div className='about-page section-wrapper'>
+          <div className='section-wrapper about-page'>
             <div className='about-page-content'>
               <h1 className='title mb-3'>{componentTitle}</h1>
               <p className='body-content'>{data.aboutContent.componentBodyOne}</p>
