@@ -1,12 +1,11 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-import Layout, { inViewContext } from "../components/layout"
+import Layout from "../components/layout"
 import { useInView } from 'react-intersection-observer';
 import { faMapMarkerAlt, faDollarSign, faStar, faChevronDown, faBookMedical, faBolt, faChartLine, faAmbulance, faCompass } from '@fortawesome/free-solid-svg-icons'
 import "../styles/about.css"
 import SocialBar from "../components/SocialBar"
 import Contact from "../components/Contact"
-import Partner from "../components/Banners/PartnersBanner"
 import PartnerBanner from '../components/Banners/PartnersBanner';
 
 const About = ({ data }) => {
