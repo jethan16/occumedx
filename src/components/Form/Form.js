@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from "emailjs-com"
 import "./Form.css";
 
 // Imported Components //
@@ -13,8 +14,26 @@ function Form() {
     email: "",
   });
 
+  const [toasterState, setToasterState] = useState(false)
+
   const handleSubmit = (event) => {
     event.preventDefault();
+
+    const replyTo = event.target.email.value;
+    const userName = event.target.fullname.value;
+    const message = event.target.comment.value;
+    const number = event.target.phone.value; 
+
+    emailjs.send("service_5vlm06j","template_cb3q7e8",{
+      reply_to: replyTo,
+      user_name: userName,
+      message: message,
+      phone_number: number,
+      },'user_N3OtD1GyVqRbyJDSfH68B')
+      .then(() => {
+        setToasterState(true);
+      });
+
   };
 
   const handleChange = (event) => {
@@ -80,6 +99,7 @@ function Form() {
                 link={'tel:7045746116'}
             />
       </div>
+      {toasterState === true ? <div className='toaster'>Thank you, your email has been submitted!</div> : ''}
     </form>
   );
 }

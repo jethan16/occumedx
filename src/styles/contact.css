@@ -27,6 +27,7 @@
     box-shadow: 0px 0px 15px 0px #29313248;
     padding: 25px;
     border-radius: 3px;
+    position: relative;
 }
 
 .about-page-content .body-content {
