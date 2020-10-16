@@ -10,7 +10,6 @@ const WhatsNewBanner = () => {
                 query WhatsNewQuery {
                     whatsNew: datoCmsWhatsNewBanner {
                         bannerTitle
-                        bannerBody
                     }
                 }
             `}
