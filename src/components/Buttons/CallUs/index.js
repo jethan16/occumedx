@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import { StaticQuery, graphql } from "gatsby";
 import "./CallUs.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
@@ -6,19 +7,31 @@ import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 
 
 
-export default function CallUsButton({
-  icon,
-  text,
-  link
-}) {
-
+const CallUsButton = () => {
 
   return (
-    <button>
-        <a href='tel:7045746116'  className="call-us-button">
-          <FontAwesomeIcon className='button-icon' icon={faPhoneAlt} />
-          Call Us Today
-        </a>
-    </button>
+    <StaticQuery
+      query={graphql`
+          query CallUsQuery {
+            phone: datoCmsCallUsTodayNumber {
+              phoneNumber
+            }
+          }
+        `}
+        render={ ({phone}) => {
+          return(
+            <button>
+                <a href={`tel:${phone.phoneNumber}`}  className="call-us-button">
+                  <FontAwesomeIcon className='button-icon' icon={faPhoneAlt} />
+                  Call Us Today
+                </a>
+            </button>
+          )
+        }}
+    />
   );
 }
+
+export default CallUsButton;
+
+

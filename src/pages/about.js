@@ -9,7 +9,6 @@ import Contact from "../components/Contact"
 import PartnerBanner from '../components/Banners/PartnersBanner';
 
 const About = ({ data }) => {
-  
   const contentBlocks = [
     [
       {

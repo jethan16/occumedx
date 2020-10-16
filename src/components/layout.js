@@ -40,14 +40,6 @@ const TemplateWrapper = ({ children }) => {
             }
             copyright
           }
-          allDatoCmsSocialProfile(sort: { fields: [position], order: ASC }) {
-            edges {
-              node {
-                profileType
-                url
-              }
-            }
-          }
           datoCmsFooter {
             bodyOne
             bodyThree
@@ -68,7 +60,6 @@ const TemplateWrapper = ({ children }) => {
       
         return (
         <>
-
           <HelmetDatoCms
             favicon={data.datoCmsSite.faviconMetaTags}
             seo={data.datoCmsHome.seoMetaTags}
