@@ -20,7 +20,7 @@ const WhatsNewBanner = () => {
             <div className='action-banner'>
                 <h1>{whatsNew.bannerTitle}</h1>
                 <Link to='/contact/'>
-                    <button>LEARN MORE</button>
+                    <button>CONTACT US TO LEARN MORE</button>
                 </Link>
             </div>)
             }}
