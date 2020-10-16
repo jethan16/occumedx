@@ -13,6 +13,7 @@ import Section from "../components/Section"
 import Partners from "../components/Banners/PartnersBanner"
 import ActionBanner from "../components/Banners/ActionBanner/index"
 import Contact from "../components/Contact/index"
+import WhatsNewBanner from "../components/Banners/WhatsNew"
 
 const IndexPage = ({ data }) => {
  
@@ -111,6 +112,7 @@ return (
     <Layout >
       <div className="home-page">
         <Hero></Hero>
+        <WhatsNewBanner></WhatsNewBanner>
         <Section 
           componentTitle={data.about.componentTitle}
           componentOverviewBody={data.about.componentOverviewBody}
