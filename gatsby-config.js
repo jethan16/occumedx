@@ -1,9 +1,9 @@
 require('dotenv').config()
 
 module.exports = {
-  pathPrefix: "/reponame",
+  pathPrefix: "/occumedx",
   siteMetadata: {
-    title: `Creative Portfolio`,
+    title: `OccuMedX - Your Partners in Occupational Health and Safety`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
