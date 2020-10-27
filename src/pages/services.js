@@ -5,7 +5,6 @@ import { HelmetDatoCms } from 'gatsby-source-datocms'
 import Layout, {inViewContext} from "../components/layout"
 import Section from "../components/Section"
 import { faMapMarkerAlt, faDollarSign, faStar, faChevronDown, faBookMedical, faBolt, faChartLine, faAmbulance, faCompass } from '@fortawesome/free-solid-svg-icons'
-
 import "../styles/services.css"
 
 const Services = ({ data }) => {
