@@ -9,31 +9,31 @@ import Contact from "../components/Contact"
 import PartnerBanner from '../components/Banners/PartnersBanner';
 
 const About = ({ data }) => {
-  const contentBlocks = [
-    [
-      {
-        icon: faMapMarkerAlt,
-        title: data.about.titleOne,
-        text: data.about.bodyOne,
-        buttonText: 'See More Services',
-        linkPath: '/services/'
-      },
-      {
-        icon: faDollarSign,
-        title: data.about.titleTwo,
-        text: data.about.bodyTwo,
-        buttonText: 'Learn More About Us',
-        linkPath: '/about/'
-      },
-      {
-        icon: faStar,
-        title: data.about.titleThree,
-        text: data.about.bodyThree,
-        buttonText: 'See Our Partners',
-        linkPath: '#partners'
-      }
-    ]
-  ]
+  // const contentBlocks = [
+  //   [
+  //     {
+  //       icon: faMapMarkerAlt,
+  //       title: data.about.titleOne,
+  //       text: data.about.bodyOne,
+  //       buttonText: 'See More Services',
+  //       linkPath: '/services/'
+  //     },
+  //     {
+  //       icon: faDollarSign,
+  //       title: data.about.titleTwo,
+  //       text: data.about.bodyTwo,
+  //       buttonText: 'Learn More About Us',
+  //       linkPath: '/about/'
+  //     },
+  //     {
+  //       icon: faStar,
+  //       title: data.about.titleThree,
+  //       text: data.about.bodyThree,
+  //       buttonText: 'See Our Partners',
+  //       linkPath: '#partners'
+  //     }
+  //   ]
+  // ]
   const componentTitle = data.aboutContent.componentTitle.toUpperCase()
 
   const { ref, inView, entry } = useInView({
