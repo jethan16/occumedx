@@ -109,7 +109,6 @@ const contentBlocks = [
 
   
 return (
-    <Layout >
       <div className="home-page">
         {/* <Hero></Hero> */}
         <WhatsNewBanner></WhatsNewBanner>
@@ -137,7 +136,6 @@ return (
           ContactBannerUrl={"https://occumedx.s3.us-east-2.amazonaws.com/team.jpg"}
         />
       </div>
-    </Layout>
   )
 }
 export default IndexPage
