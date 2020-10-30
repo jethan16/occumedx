@@ -158,9 +158,9 @@ export const query = graphql`
       componentTitle
     }
     services: datoCmsHomePageServicesOverview {
+      bodyFive
       bodyFour
       bodyOne
-      bodySix
       bodyThree
       bodyTwo
       componentTitle
@@ -168,7 +168,7 @@ export const query = graphql`
       titleOne
       titleTwo
       titleFour
-      titleSix
+      titleFive
       titleThree
     }
     partners: datoCmsPartner {
