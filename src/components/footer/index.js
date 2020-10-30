@@ -60,7 +60,7 @@ const Footer = ({data}) => (
                 </FooterBlock>
             </footer>
             <section className="footer-banner">
-                 <h4>© 2019 OccuMedX™</h4>
+                 <h4>© 2020 OccuMedX™</h4>
             </section>
         </>
 );
