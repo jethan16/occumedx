@@ -82,36 +82,36 @@ const contentBlocks = [
   ]
 
 // Sub Components //
-const Hero = () => {
+// const Hero = () => {
 
-  // const { ref, inView, entry } = useInView({
-  //   // Hook Options //
-  //   threshold: 1,
-  // });
+//   // const { ref, inView, entry } = useInView({
+//   //   // Hook Options //
+//   //   threshold: 1,
+//   // });
 
 
-  return(
-    <inViewContext.Consumer>
-      { context => {
-        {/* {inView === true ? context.toggleInView(inView) : context.toggleInView(inView);} */}
-        return(
-          <section className='hero'>
-            <div className='hero-overlay'></div>
-            {/* <img src="https://occumedx.s3.us-east-2.amazonaws.com/occumedX_logo_black_full.png" ref={ref}></img> */}
-            <h1>{data.hero.heroTitle}</h1>
-            <FontAwesomeIcon icon={faChevronDown} />
-          </section>
-        )
-      }}
-    </inViewContext.Consumer>
-  );
-};
+//   return(
+//     <inViewContext.Consumer>
+//       { context => {
+//         {/* {inView === true ? context.toggleInView(inView) : context.toggleInView(inView);} */}
+//         return(
+//           <section className='hero'>
+//             <div className='hero-overlay'></div>
+//             {/* <img src="https://occumedx.s3.us-east-2.amazonaws.com/occumedX_logo_black_full.png" ref={ref}></img> */}
+//             <h1>{data.hero.heroTitle}</h1>
+//             <FontAwesomeIcon icon={faChevronDown} />
+//           </section>
+//         )
+//       }}
+//     </inViewContext.Consumer>
+//   );
+// };
 
   
 return (
     <Layout >
       <div className="home-page">
-        <Hero></Hero>
+        {/* <Hero></Hero> */}
         <WhatsNewBanner></WhatsNewBanner>
         <Section 
           componentTitle={data.about.componentTitle}
