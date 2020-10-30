@@ -1,11 +1,11 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-import Layout from "../../components/layout"
+import Layout from "../components/layout"
 import { useInView } from 'react-intersection-observer';
 import "../styles/about.css"
-import SocialBar from "../../components/SocialBar"
-import Contact from "../../components/Contact"
-import PartnerBanner from '../../components/Banners/PartnersBanner';
+import SocialBar from "../components/SocialBar"
+import Contact from "../components/Contact"
+import PartnerBanner from '../components/Banners/PartnersBanner';
 
 const About = ({ data }) => {
   
