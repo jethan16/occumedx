@@ -51,7 +51,7 @@ const contentBlocks = [
         linkPath: '/services/'
       },
       {
-        icon: faBookMedical,
+        icon: faCompass,
         title: data.services.titleTwo,
         text: data.services.bodyTwo,
         buttonText: '',
@@ -72,7 +72,7 @@ const contentBlocks = [
         linkPath: '/services/'
       },
       {
-        icon: faCompass,
+        icon: faBookMedical,
         title: data.services.titleFive,
         text: data.services.bodyFive,
         buttonText: '',
