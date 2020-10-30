@@ -15,7 +15,7 @@ import "../styles/home.css"
 // import Contact from "../components/Contact/index"
 // import WhatsNewBanner from "../components/Banners/WhatsNew"
 
-const IndexPage = () => {
+const IndexPage = ({data}) => {
 
 
   // const contentBlocks = [
