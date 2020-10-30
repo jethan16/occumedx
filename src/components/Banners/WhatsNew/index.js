@@ -14,7 +14,6 @@ const WhatsNewBanner = () => {
                 }
             `}
         render={({whatsNew}) => {
-            console.log('5',whatsNew)
             return(
             <div className='action-banner'>
                 <h1>{whatsNew.bannerTitle}</h1>

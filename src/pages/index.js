@@ -109,33 +109,9 @@ const contentBlocks = [
 
   
 return (
-      <div className="home-page">
-        {/* <Hero></Hero> */}
-        <WhatsNewBanner></WhatsNewBanner>
-        <Section 
-          componentTitle={data.about.componentTitle}
-          componentOverviewBody={data.about.componentOverviewBody}
-          contentBlock={contentBlocks[0]}
-          sectionStyle={'about'}
-          cardStyle={'default'}
-        />
-        <ActionBanner></ActionBanner>
-        <Section 
-          componentTitle={data.services.componentTitle}
-          componentOverviewBody={data.services.componentOverviewBody}
-          contentBlock={contentBlocks[1]}
-          sectionStyle={'services'}
-          cardStyle={'alternate'}
-          color={'##f4f4f9'}
-          backgroundColor={'#293132'}
-        />
-        <div id='partners'>
-          <Partners partners={data.partners.companyLogos}/>
-        </div>
-        <Contact 
-          ContactBannerUrl={"https://occumedx.s3.us-east-2.amazonaws.com/team.jpg"}
-        />
-      </div>
+    <Layout >
+     
+    </Layout>
   )
 }
 export default IndexPage
