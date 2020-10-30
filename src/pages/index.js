@@ -116,41 +116,41 @@ return (
 }
 export default IndexPage
 
-export const query = graphql`
-  query IndexQuery {
-    hero: datoCmsHomePageHeroCopy {
-      heroTitle
-    }
-    about: datoCmsHomePageAboutOverview {
-      bodyOne
-      bodyThree
-      bodyTwo
-      titleOne
-      titleThree
-      titleTwo
-      componentOverviewBody
-      componentTitle
-    }
-    services: datoCmsHomePageServicesOverview {
-      bodyFive
-      bodyFour
-      bodyOne
-      bodySix
-      bodyThree
-      bodyTwo
-      componentTitle
-      componentOverviewBody
-      titleOne
-      titleTwo
-      titleFour
-      titleFive
-      titleSix
-      titleThree
-    }
-    partners: datoCmsPartner {
-      companyLogos {
-        url
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   query IndexQuery {
+//     hero: datoCmsHomePageHeroCopy {
+//       heroTitle
+//     }
+//     about: datoCmsHomePageAboutOverview {
+//       bodyOne
+//       bodyThree
+//       bodyTwo
+//       titleOne
+//       titleThree
+//       titleTwo
+//       componentOverviewBody
+//       componentTitle
+//     }
+//     services: datoCmsHomePageServicesOverview {
+//       bodyFive
+//       bodyFour
+//       bodyOne
+//       bodySix
+//       bodyThree
+//       bodyTwo
+//       componentTitle
+//       componentOverviewBody
+//       titleOne
+//       titleTwo
+//       titleFour
+//       titleFive
+//       titleSix
+//       titleThree
+//     }
+//     partners: datoCmsPartner {
+//       companyLogos {
+//         url
+//       }
+//     }
+//   }
+// `
