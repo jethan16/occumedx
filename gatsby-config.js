@@ -1,7 +1,6 @@
 require('dotenv').config()
 
 module.exports = {
-  pathPrefix: "/occumedx",
   siteMetadata: {
     title: `OccuMedX - Your Partners in Occupational Health and Safety`,
   },
