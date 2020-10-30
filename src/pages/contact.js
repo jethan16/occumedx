@@ -1,16 +1,16 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Layout, { inViewContext } from "../components/layout"
-import { useInView } from 'react-intersection-observer';
+import Layout from "../components/layout"
+// import { useInView } from 'react-intersection-observer';
 import Form from "../components/Form/Form"
 import "../styles/contact.css"
 
 const Contact = ({ data }) => {
 
-    const { ref, inView, entry } = useInView({
-        // Hook Options //
-        threshold: 1,
-      });
+    // const { ref, inView, entry } = useInView({
+    //     // Hook Options //
+    //     threshold: 1,
+    //   });
 
     return(
         <Layout>

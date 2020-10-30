@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Layout from "../components/layout"
-import { useInView } from 'react-intersection-observer';
+// import { useInView } from 'react-intersection-observer';
 import "../styles/about.css"
 import SocialBar from "../components/SocialBar"
 import Contact from "../components/Contact"
@@ -11,10 +11,10 @@ const About = ({ data }) => {
   
   const componentTitle = data.aboutContent.componentTitle.toUpperCase()
 
-  const { ref, inView, entry } = useInView({
-    // Hook Options //
-    threshold: 1,
-  });
+  // const { ref, inView, entry } = useInView({
+  //   // Hook Options //
+  //   threshold: 1,
+  // });
 
   return(
     <Layout>

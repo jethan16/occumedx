@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-import { useInView } from 'react-intersection-observer';
+// import { useInView } from 'react-intersection-observer';
 import { HelmetDatoCms } from 'gatsby-source-datocms'
 import Layout, {inViewContext} from "../components/layout"
 import Section from "../components/Section"
@@ -9,10 +9,10 @@ import "../styles/services.css"
 
 const Services = ({ data }) => {
 
-    const { ref, inView, entry } = useInView({
-      // Hook Options //
-      threshold: 1,
-    });
+    // const { ref, inView, entry } = useInView({
+    //   // Hook Options //
+    //   threshold: 1,
+    // });
 
     const contentBlocks = [
         {
