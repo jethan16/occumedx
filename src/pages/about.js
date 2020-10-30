@@ -2,7 +2,6 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Layout from "../components/layout"
 import { useInView } from 'react-intersection-observer';
-import { faMapMarkerAlt, faDollarSign, faStar, faChevronDown, faBookMedical, faBolt, faChartLine, faAmbulance, faCompass } from '@fortawesome/free-solid-svg-icons'
 import "../styles/about.css"
 import SocialBar from "../components/SocialBar"
 import Contact from "../components/Contact"
@@ -53,16 +52,6 @@ export default About;
       componentBodyTwo
       componentTitle
       componentBodyOne
-    }
-    about: datoCmsHomePageAboutOverview {
-      bodyOne
-      bodyThree
-      bodyTwo
-      titleOne
-      titleThree
-      titleTwo
-      componentOverviewBody
-      componentTitle
     }
     partners: datoCmsPartner {
       companyLogos {
