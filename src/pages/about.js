@@ -9,7 +9,7 @@ import PartnerBanner from '../components/Banners/PartnersBanner';
 
 const About = ({ data }) => {
   
-  const componentTitle = data.aboutContent.componentTitle.toUpperCase()
+  // const componentTitle = data.aboutContent.componentTitle.toUpperCase()
 
   // const { ref, inView, entry } = useInView({
   //   // Hook Options //
@@ -18,7 +18,7 @@ const About = ({ data }) => {
 
   return(
     <Layout>
-          <div className='section-wrapper about-page'>
+          {/* <div className='section-wrapper about-page'>
             <div className='about-page-content'>
               <h1 className='title mb-3'>{componentTitle}</h1>
               <p className='body-content'>{data.aboutContent.componentBodyOne}</p>
@@ -37,7 +37,8 @@ const About = ({ data }) => {
             </div>
           <Contact
             ContactBannerUrl={"https://occumedx.s3.us-east-2.amazonaws.com/team.jpg"}
-          />
+          /> */}
+          <h1>Testing</h1>
     </Layout>
   );
 };
@@ -45,18 +46,18 @@ const About = ({ data }) => {
 export default About;
 
 
-  export const query = graphql`
-  query AboutQuery {
-    aboutContent: datoCmsAboutPage {
-      componentBodyThree
-      componentBodyTwo
-      componentTitle
-      componentBodyOne
-    }
-    partners: datoCmsPartner {
-      companyLogos {
-        url
-      }
-    }
-  }
-`
+//   export const query = graphql`
+//   query AboutQuery {
+//     aboutContent: datoCmsAboutPage {
+//       componentBodyThree
+//       componentBodyTwo
+//       componentTitle
+//       componentBodyOne
+//     }
+//     partners: datoCmsPartner {
+//       companyLogos {
+//         url
+//       }
+//     }
+//   }
+// `
