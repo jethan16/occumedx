@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react'
+import React, { useContext, useState } from 'react'
 import { graphql } from 'gatsby'
 import Layout, { inViewContext } from "../components/layout"
 import { useInView } from 'react-intersection-observer';
@@ -16,7 +16,7 @@ import Contact from "../components/Contact/index"
 import WhatsNewBanner from "../components/Banners/WhatsNew"
 
 const IndexPage = ({ data }) => {
-
+ 
 
 const contentBlocks = [
     [
@@ -97,7 +97,7 @@ const Hero = () => {
         return(
           <section className='hero'>
             <div className='hero-overlay'></div>
-            {/* <img src="https://occumedx.s3.us-east-2.amazonaws.com/occumedX_logo_black_full.png" ref={ref}></img> */}
+            <img src="https://occumedx.s3.us-east-2.amazonaws.com/occumedX_logo_black_full.png" ref={ref}></img>
             <h1>{data.hero.heroTitle}</h1>
             <FontAwesomeIcon icon={faChevronDown} />
           </section>
@@ -161,6 +161,7 @@ export const query = graphql`
       bodyFive
       bodyFour
       bodyOne
+      bodySix
       bodyThree
       bodyTwo
       componentTitle
@@ -169,6 +170,7 @@ export const query = graphql`
       titleTwo
       titleFour
       titleFive
+      titleSix
       titleThree
     }
     partners: datoCmsPartner {
