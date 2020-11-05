@@ -7,20 +7,20 @@ import SocialBar from "../components/SocialBar"
 import Contact from "../components/Contact"
 import PartnerBanner from '../components/Banners/PartnersBanner';
 
-const About = ({ data }) => {
+function About({ data }) {
   
-  const componentTitle = data.aboutContent.componentTitle.toUpperCase()
+  // const componentTitle = data.aboutContent.componentTitle.toUpperCase()
 
-  const { ref, inView, entry } = useInView({
-    // Hook Options //
-    threshold: 1,
-  });
+  // const { ref, inView, entry } = useInView({
+  //   // Hook Options //
+  //   threshold: 1,
+  // });
 
   return(
     <Layout>
           <div className='section-wrapper about-page'>
             <div className='about-page-content'>
-              <h1 className='title mb-3'>{componentTitle}</h1>
+              <h1 className='title mb-3'>{data.aboutContent.componentTitle.toUpperCase()}</h1>
               <p className='body-content'>{data.aboutContent.componentBodyOne}</p>
               <p className='body-content'>{data.aboutContent.componentBodyTwo}</p>
               <p className='body-content'>{data.aboutContent.componentBodyThree}</p>
