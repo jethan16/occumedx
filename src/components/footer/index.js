@@ -27,7 +27,7 @@ const VerticalBreak = () => (
     <div className="line-break-vertical"></div>
 );
 
-const Footer = ({data}) => (
+const Footer = ({data, copyright}) => (
         <>
             <footer>
                 <FooterBlock >
@@ -56,11 +56,14 @@ const Footer = ({data}) => (
 
                 <FooterBlock >
                         <FooterTitle content={data.titleThree}></FooterTitle>
-                        <FooterBody tag={'p'} content={data.bodyThree}></FooterBody>
+                        <FooterBody tag={'ul'}>
+                                <p>{data.contactPhone}</p>
+                                <p>{data.contactEmail}</p>
+                        </FooterBody>
                 </FooterBlock>
             </footer>
             <section className="footer-banner">
-                 <h4>© 2020 OccuMedX™</h4>
+                 <h4>{copyright}</h4>
             </section>
         </>
 );

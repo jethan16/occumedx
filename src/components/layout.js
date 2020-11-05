@@ -42,7 +42,6 @@ const TemplateWrapper = ({ children }) => {
           }
           datoCmsFooter {
             bodyOne
-            bodyThree
             listItemFive
             listItemFour
             listItemOne
@@ -51,6 +50,8 @@ const TemplateWrapper = ({ children }) => {
             titleOne
             titleThree
             titleTwo
+            contactEmail
+            contactPhone
           }
         }
       `}
@@ -72,7 +73,7 @@ const TemplateWrapper = ({ children }) => {
                 viewState={inViewState}
               ></NavBar>
               {children}
-              <Footer data={data.datoCmsFooter}></Footer>
+              <Footer data={data.datoCmsFooter} copyright={data.datoCmsHome.copyright}></Footer>
           </inViewContext.Provider>
         </>
         )
