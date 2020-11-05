@@ -7,7 +7,7 @@ import SocialBar from "../components/SocialBar"
 import Contact from "../components/Contact"
 import PartnerBanner from '../components/Banners/PartnersBanner';
 
-function About() {
+function About({data}) {
   
   // const componentTitle = data.aboutContent.componentTitle.toUpperCase()
 
