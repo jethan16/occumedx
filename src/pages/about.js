@@ -7,7 +7,7 @@ import SocialBar from "../components/SocialBar"
 import Contact from "../components/Contact"
 import PartnerBanner from '../components/Banners/PartnersBanner';
 
-function About({ data }) {
+function About() {
   
   // const componentTitle = data.aboutContent.componentTitle.toUpperCase()
 
@@ -47,18 +47,18 @@ function About({ data }) {
 export default About;
 
 
-export const query = graphql`
-query AboutQuery {
-  aboutContent: datoCmsAboutPage {
-    componentBodyThree
-    componentBodyTwo
-    componentTitle
-    componentBodyOne
-  }
-  partners: datoCmsPartner {
-    companyLogos {
-      url
-    }
-  }
-}
-`
+// export const query = graphql`
+// query AboutQuery {
+//   aboutContent: datoCmsAboutPage {
+//     componentBodyThree
+//     componentBodyTwo
+//     componentTitle
+//     componentBodyOne
+//   }
+//   partners: datoCmsPartner {
+//     companyLogos {
+//       url
+//     }
+//   }
+// }
+// `
