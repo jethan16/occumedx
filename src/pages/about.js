@@ -17,7 +17,8 @@ function About({ data }) {
   // });
 
   return(
-    <Layout>
+    // <Layout>
+    <>
           <div className='section-wrapper about-page'>
             <div className='about-page-content'>
               <h1 className='title mb-3'>{data.aboutContent.componentTitle.toUpperCase()}</h1>
@@ -38,7 +39,8 @@ function About({ data }) {
           <Contact
             ContactBannerUrl={"https://occumedx.s3.us-east-2.amazonaws.com/team.jpg"}
           />
-    </Layout>
+    </>
+    // </Layout>
   );
 };
 
