@@ -26,9 +26,9 @@ function About() {
             <p className='body-content'>{data.aboutContent.componentBodyTwo}</p>
             <p className='body-content'>{data.aboutContent.componentBodyThree}</p>
           </div>
-          <Link to='/services' className='navigation-banner'>
+          {/* <Link to='/services' className='navigation-banner'>
             <h1 className='navigation-banner-button'>SERVICES</h1>
-          </Link>
+          </Link> */}
         </div>
           {/* <PartnerBanner partners={data.partners.companyLogos}/>
           <div className='social-wrapper'>
