@@ -47,18 +47,18 @@ function About() {
 export default About;
 
 
-// export const query = graphql`
-// query AboutQuery {
-//   aboutContent: datoCmsAboutPage {
-//     componentBodyThree
-//     componentBodyTwo
-//     componentTitle
-//     componentBodyOne
-//   }
-//   partners: datoCmsPartner {
-//     companyLogos {
-//       url
-//     }
-//   }
-// }
-// `
+export const query = graphql`
+query AboutQuery {
+  aboutContent: datoCmsAboutPage {
+    componentBodyThree
+    componentBodyTwo
+    componentTitle
+    componentBodyOne
+  }
+  partners: datoCmsPartner {
+    companyLogos {
+      url
+    }
+  }
+}
+`
