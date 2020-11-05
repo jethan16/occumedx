@@ -30,7 +30,7 @@ function About({data}) {
             <h1 className='navigation-banner-button'>SERVICES</h1>
           </Link>
         </div>
-          {/* <PartnerBanner partners={data.partners.companyLogos}/>
+          <PartnerBanner partners={data.partners.companyLogos}/>
           <div className='social-wrapper'>
             <h1 className='text-center'>STAY CONNECTED WITH US</h1>
             <div className='vertical-line-break'></div>
@@ -38,7 +38,7 @@ function About({data}) {
           </div>
         <Contact
           ContactBannerUrl={"https://occumedx.s3.us-east-2.amazonaws.com/team.jpg"}
-        /> */}
+        />
       </>
     </Layout>
   );
