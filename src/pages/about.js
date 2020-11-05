@@ -19,7 +19,7 @@ function About() {
   return(
     <Layout>
       <>
-        {/* <div className='section-wrapper about-page'>
+        <div className='section-wrapper about-page'>
           <div className='about-page-content'>
             <h1 className='title mb-3'>{data.aboutContent.componentTitle.toUpperCase()}</h1>
             <p className='body-content'>{data.aboutContent.componentBodyOne}</p>
@@ -30,7 +30,7 @@ function About() {
             <h1 className='navigation-banner-button'>SERVICES</h1>
           </Link>
         </div>
-          <PartnerBanner partners={data.partners.companyLogos}/>
+          {/* <PartnerBanner partners={data.partners.companyLogos}/>
           <div className='social-wrapper'>
             <h1 className='text-center'>STAY CONNECTED WITH US</h1>
             <div className='vertical-line-break'></div>
