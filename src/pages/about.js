@@ -8,13 +8,6 @@ import Contact from "../components/Contact"
 import PartnerBanner from '../components/Banners/PartnersBanner';
 
 function About({data}) {
-  
-  // const componentTitle = data.aboutContent.componentTitle.toUpperCase()
-
-  // const { ref, inView, entry } = useInView({
-  //   // Hook Options //
-  //   threshold: 1,
-  // });
 
   return(
     <Layout>
