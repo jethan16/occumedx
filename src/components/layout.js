@@ -66,7 +66,6 @@ const TemplateWrapper = ({ children }) => {
             seo={data.datoCmsHome.seoMetaTags}
           />
           <inViewContext.Provider value={{inViewState, toggleInView: (inViewFromIndex) => {
-            console.log('Context Function Called', inViewFromIndex) 
             setInViewState(inViewFromIndex)
           }}}>
               <NavBar
