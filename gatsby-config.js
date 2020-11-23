@@ -17,23 +17,25 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-webfonts`,
       options: {
-        fonts: [
-          {
-            family: `Montserrat`,
-            variants: [`300`, `400`, `600`, `700`]
-          },
-          {
-            family: `Open Sans`,
-            variants: [`300`, `400`, `500`, `700`]
-          },
-          {
-            family: `Work Sans`,
-            variants: [`300`, `400`, `500`, `700`]
-          },
-        ],
-      },
-    },
+        fonts: {
+          google: [
+            {
+              family: `Montserrat`,
+              variants: [`300`, `400`, `600`, `700`]
+            },
+            {
+              family: `Open Sans`,
+              variants: [`300`, `400`, `500`, `700`]
+            },
+            {
+              family: `Work Sans`,
+              variants: [`300`, `400`, `500`, `700`]
+            }
+          ]
+        }
+      }
+    }
   ],
 }
