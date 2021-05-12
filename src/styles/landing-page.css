@@ -1,0 +1,120 @@
+:root {
+    --color-primary: black;
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'montserrat';
+}
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    display: flex; 
+    align-items: center;
+    background: url('https://www.datocms-assets.com/34814/1620676652-city-skyline.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.hero-title {
+    width: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.hero-title h1 {
+    margin: 25px 0;
+    color: var(--color-primary);
+    z-index: 10;
+}
+
+.card {
+    border: solid 1px darkgrey;
+    border-radius: 5px;
+    padding: 25px 35px;
+    margin: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.card p {
+    font-size: 20px;
+}
+
+.contact-row {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.circle-row {
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.contact-row .circle {
+    width: 8px;
+    height: 8px;
+    margin: 0 3px;
+    border-radius: 100%;
+    border: solid 1px black;
+}
+
+
+.hero--overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    background: red;
+    opacity: .35;
+    background: white;
+    /* z-index: -1; */
+}
+
+@media (min-width: 1024px) {
+
+    .hero-title {
+        width: 500px;
+    }
+
+    .hero-title h1 {
+        font-size: 35px;
+        width: 100%;
+    }
+
+    .card {
+        width: 60%;
+        padding: 55px 35px;
+    }
+    
+}
+
+@media (min-width: 1100px) {
+    .hero {
+        background-size: cover;
+        background-position-y: 925px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .hero {
+        background-size: cover;
+        background-position-y: 1200px;
+    }
+}

@@ -1,6 +1,6 @@
 /* Hero Section */
 
-.hero {
+/* .hero {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -9,9 +9,9 @@
   background-size: cover;
   background-position: center;
   background-image: url("https://occumedx.s3.us-east-2.amazonaws.com/city.jpg");
-}
+} */
 
-.hero-overlay {
+/* .hero-overlay {
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -23,16 +23,16 @@
     rgba(240, 204, 204, 0.07) 73.02%,
     rgba(22, 22, 22, 0.85) 91.92%
   );
-}
+} */
 
-.hero h1 {
+/* .hero h1 {
   padding: 0 30px;
   margin: 10px;
   font-size: 14px;
   font-family: 'Work Sans';
   text-align: center;
   z-index: 2;
-}
+} */
 
 .hero img {
   width: 350px;
