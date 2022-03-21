@@ -1,6 +1,6 @@
 /* Hero Section */
 
-/* .hero {
+.hero {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -8,10 +8,10 @@
   justify-content: center;
   background-size: cover;
   background-position: center;
-  background-image: url("https://occumedx.s3.us-east-2.amazonaws.com/city.jpg");
-} */
+  background-image: url("https://www.datocms-assets.com/34814/1620676652-city-skyline.jpg");
+}
 
-/* .hero-overlay {
+.hero-overlay {
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -23,20 +23,27 @@
     rgba(240, 204, 204, 0.07) 73.02%,
     rgba(22, 22, 22, 0.85) 91.92%
   );
-} */
+}
 
-/* .hero h1 {
+.hero h1 {
   padding: 0 30px;
   margin: 10px;
-  font-size: 14px;
+  font-size: 16px;
   font-family: 'Work Sans';
   text-align: center;
+  font-weight: bold;
   z-index: 2;
-} */
+}
 
 .hero img {
-  width: 350px;
+  width: 250px;
   z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .hero img {
+    width: 425px
+  }
 }
 
 .fa-chevron-down {
@@ -255,6 +262,10 @@
 
   .hero {
     background-position: 50% 75%;
+  }
+
+  .hero h1 {
+    font-size: 26px;
   }
 
   .contact-section {

@@ -40,7 +40,6 @@
 }
 
 .nav-links-show {
-    transform: scaleX(-100%);
     transition: .25s ease-in-out
 }
 

@@ -28,10 +28,11 @@ const Menu = ({ inView }) => {
         <img src="https://www.datocms-assets.com/34814/1601044706-logomin.png" height="50px" ></img>
       </div>
       <div className='header-second'>
-        <NavLink to='/'>HOME</NavLink>
-        <NavLink to='/about'>ABOUT</NavLink>
+        <NavLink to='/'>home</NavLink>
+        <NavLink to='/about/'>ABOUT</NavLink>
         <NavLink to='/services'>SERVICES</NavLink>
         <NavLink to='/contact'>CONTACT</NavLink>
+        <a>Test</a>
       </div>
       <div className='header-third'>
         <CallUsButton />

@@ -102,7 +102,7 @@ const Hero = () => {
             return(
               <section className='hero'>
                 <div className='hero-overlay'></div>
-                <img src="https://occumedx.s3.us-east-2.amazonaws.com/occumedX_logo_black_full.png" ref={ref}></img>
+                <img src="https://www.datocms-assets.com/34814/1646324395-ocx-straight-logo-black-letters-edited.png" ref={ref}></img>
                 <h1>{data.hero.heroTitle}</h1>
                 <FontAwesomeIcon icon={faChevronDown} />
               </section>
@@ -141,7 +141,7 @@ return (
           <Partners partners={data.partners.companyLogos}/>
         </div>
         <Contact 
-          ContactBannerUrl={"https://occumedx.s3.us-east-2.amazonaws.com/team.jpg"}
+          ContactBannerUrl={"https://www.datocms-assets.com/34814/1646332260-contact-splash-image.jpg"}
         />
       </div>
     </Layout>
