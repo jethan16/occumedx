@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import { Link } from "gatsby";
 import "../../styles/navbar.css";
 
 // Imported Sub Components
@@ -19,7 +20,9 @@ const NavBar = ({viewState}) => {
 
   return (
             <nav className={`nav ${viewState === true ? "" : "nav-overlay"}`}>
-              <img className='hamburger-menu-logo' src="https://www.datocms-assets.com/34814/1601044706-logomin.png" height="50px" ></img>
+              <Link to="/">
+                <img className='hamburger-menu-logo' src="https://www.datocms-assets.com/34814/1601044706-logomin.png" height="50px" ></img>
+              </Link>
               <MenuBars handleMenuChange={handleMenuChange} menuState={menuState} inView={viewState}/>
               <Menu menuState={menuState} inView={viewState}/>
               <HamburgerMenu menuState={menuState} inView={viewState}/>

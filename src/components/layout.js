@@ -45,6 +45,7 @@ const TemplateWrapper = ({ children }) => {
             listItemFive
             listItemFour
             listItemOne
+            listItemSix
             listItemThree
             listItemTwo
             titleOne

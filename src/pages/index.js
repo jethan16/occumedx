@@ -26,7 +26,7 @@ const contentBlocks = [
         icon: faMapMarkerAlt,
         title: data.about.titleOne,
         text: data.about.bodyOne,
-        buttonText: 'See More Services',
+        buttonText: 'See More Solutions',
         linkPath: '/services/'
       },
       {
@@ -119,7 +119,7 @@ return (
     <Layout >
       <div className="home-page">
         <Hero></Hero>
-        <WhatsNewBanner></WhatsNewBanner>
+        {/* <WhatsNewBanner></WhatsNewBanner> */}
         <Section 
           componentTitle={data.about.componentTitle}
           componentOverviewBody={data.about.componentOverviewBody}

@@ -15,7 +15,20 @@ export default function ContentBlocks({ icon, title, text, cardStyle, buttonText
       )}
       <h4 className='mt-2'><strong>{title}</strong></h4>
       <div className='line-break-horizontal'></div>
-      <p className="body-content">{text}</p>
+      {
+        cardStyle === 'default' ?
+        <p className="body-content">{text}</p> 
+        : cardStyle === 'alternate' ?
+        <p className="body-content">{text}</p> 
+        : cardStyle === 'alternate-list' ? 
+        <ul style={{textAlign: 'center', marginTop: '10px'}}>
+          {
+            text.map(item => (
+              <li style={{margin: '10px'}}>{item}</li>
+            ))
+          }
+        </ul> : <></>
+      }
       {cardStyle === 'default' ? (
 
           <Link to={linkPath}>
@@ -24,7 +37,7 @@ export default function ContentBlocks({ icon, title, text, cardStyle, buttonText
             </button>
           </Link>
         
-        ) : ''}
+        ) : <></>}
     </section>
   );
 }

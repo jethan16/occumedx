@@ -109,9 +109,9 @@
   background-image: url(../testImages/test2.jpg);
 }
 
-.about-content {
+/* .about-content {
   position: relative;
-}
+} */
 
 .about-header {
   display: flex;
@@ -157,11 +157,6 @@
   margin: 0;
   margin-top:10px;
   font-size: 16px;
-}
-
-.about-content {
-  display: flex;
-  flex-direction: column;
 }
 
 .about-body-content {

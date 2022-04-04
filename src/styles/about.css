@@ -1,13 +1,49 @@
-.about-page {
-    background: #f4f4f9;
-    padding-top: 150px;
-    padding-bottom: 50px;
+* {
+    font-family: 'Open Sans';
 }
 
-.about-page-content .title {
+.about-page {
+    background: #f4f4f9;
+    padding-top: 125px;
+    /* padding-bottom: 50px; */
+}
+
+.about-page-upper-content {
+    /* padding: 50px 0; */
+}
+
+.container {
+    padding: 25px;
+}
+
+.about-content {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content h4 {
+    margin: 10px auto;
+    font-weight: bolder;
+}
+
+.about-content .body-content {
+    text-align: center;
+    margin: 10px;
+}
+
+.about-title {
     text-align: start;
     border-left: solid 2px #ce2029;
     padding-left: 15px;
+    margin: 0 auto;
+}
+
+.about-title .body-content {
+    width: 100%;
+    text-align: start;
 }
 
 .about-page-content .body-content {
@@ -52,12 +88,36 @@
     margin-bottom: 25px;
 }
 
-
-
 @media only screen and (min-width: 768px) {
-    .about-page .body-content {
+
+    .about-content {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .about-content .body-content {
         padding: 0 15px;
         margin: 25px 0;
+        width: 33%;
+    }
+
+    .about-title {
+        border: none;
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .about-title .title {
+        margin: 15px auto;
+        padding-bottom: 15px;
+        text-align: center;
+        border-bottom: solid 1px #ce2029;
+        width: 200px;
+    }
+
+    .about-title .body-content {
+        text-align: center;
     }
 
     .navigation-banner {
@@ -68,8 +128,8 @@
 @media only screen and (min-width: 1024px) {
 
     .about-page {
-        padding: 150px 175px;
-        padding-bottom: 50px;
+        /* padding: 150px 175px; */
+        /* padding-bottom: 50px; */
     }
 
     .about-page-content .title {
@@ -115,7 +175,7 @@
 }
 
 @media only screen and (min-width: 1216px) {
-    .about-page {
+    .about-page-lower-content {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -131,14 +191,31 @@
         width: 50%;
         margin-right: 25px;
     }
+
+    .about-content {
+        margin: 50px auto;
+    }
+
+    .about-content .body-content {
+        width: 25%;
+        margin: 10px 25px;
+    }
+
+    .about-title {
+        width: 50%;
+    }
 }
 
 @media only screen and (min-width: 1700px) {
 
     .about-page {
-        padding: 100px 300px;
-        padding-top: 200px;
+        /* padding: 100px 300px; */
+        /* padding-top: 200px; */
         justify-content: center;
+    }
+
+    .about-page-upper-content {
+        padding: 50px 200px;
     }
 
     .about-page-content {

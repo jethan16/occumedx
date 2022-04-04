@@ -80,14 +80,15 @@
     .contact-page .about-page-content {
         margin: 0;
         display: flex;
-        align-items: center;
-        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 75%;
     }
 
     .contact-page .form {
         width: 100%;
-        margin-top: 0;
-        margin-left: 25px;
+        margin-top: 50px;
+        /* margin-left: 25px; */
     }
 
 }

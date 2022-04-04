@@ -18,7 +18,7 @@ const Contact = ({ data }) => {
                 <div className='contact-page section-wrapper'>
                     <div className='overlay-color'></div>
                     <div className='about-page-content'>
-                        <div>
+                        <div className='card-cap'>
                             <h1 className='title'>{data.contact.componentOverviewTitle}</h1>
                             <p className='body-content'>{data.contact.componentOverviewBody}</p>
                         </div>

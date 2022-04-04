@@ -45,6 +45,7 @@ const Footer = ({data, copyright}) => (
                             <li>{data.listItemThree}</li>
                             <li>{data.listItemFour}</li>
                             <li>{data.listItemFive}</li>
+                            <li>{data.listItemSix}</li>
                         </FooterBody>
                 </FooterBlock>
                 <FooterBlock >

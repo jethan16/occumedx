@@ -25,12 +25,14 @@ const Menu = ({ inView }) => {
   return (
     <div className={'menu'}>
       <div className='header-first'>
+      <NavLink to="/">
         <img src="https://www.datocms-assets.com/34814/1601044706-logomin.png" height="50px" ></img>
+      </NavLink>
       </div>
       <div className='header-second'>
-        <NavLink to='/'>home</NavLink>
+        <NavLink to='/'>HOME</NavLink>
         <NavLink to='/about/'>ABOUT</NavLink>
-        <NavLink to='/services'>SERVICES</NavLink>
+        <NavLink to='/services'>SOLUTIONS</NavLink>
         <NavLink to='/contact'>CONTACT</NavLink>
       </div>
       <div className='header-third'>
