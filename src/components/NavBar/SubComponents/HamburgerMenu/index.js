@@ -21,7 +21,7 @@ const HamburgerMenu = ({ menuState, inView }) => {
         <menu className={`hamburger-menu ${menuState ? 'menu-open' : 'menu-closed'} ${inView ? '' : 'menu-higher-pos'}`}>
             <NavLink to='/' className={menuState === true ? 'nav-links-show' : 'nav-links-hide'}>HOME</NavLink>
             <NavLink to='/about' className={menuState === true ? 'nav-links-show' : 'nav-links-hide'}>ABOUT</NavLink>
-            <NavLink to='/services' className={menuState === true ? 'nav-links-show' : 'nav-links-hide'}>SERVICES</NavLink>
+            <NavLink to='/services' className={menuState === true ? 'nav-links-show' : 'nav-links-hide'}>SOLUTIONS</NavLink>
             <NavLink to='/contact' className={menuState === true ? 'nav-links-show' : 'nav-links-hide'}>CONTACT</NavLink>
 
             <div className={menuState === true ? 'nav-links-show' : 'nav-links-hide'}>
