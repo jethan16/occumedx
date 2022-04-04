@@ -24,7 +24,7 @@ export default function ContentBlocks({ icon, title, text, cardStyle, buttonText
         <ul style={{textAlign: 'center', marginTop: '10px'}}>
           {
             text.map(item => (
-              <li style={{margin: '10px'}}>{item}</li>
+              <li style={{margin: '10px', fontFamily: 'Open Sans'}}>{item}</li>
             ))
           }
         </ul> : <></>
